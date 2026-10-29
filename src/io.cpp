@@ -9,7 +9,22 @@ std::string getTextInput()
     return input;
 }
 
-void outputText(std::string text)
+void outputText(std::string input)
 {
-    std::cout << text << "\n";
+    std::cout << input << "\n";
+}
+
+bool validInput(std::string input)
+{
+    if (input == "exit" || input == "look" || input == "pick")
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+    {
+
+    }
 }
