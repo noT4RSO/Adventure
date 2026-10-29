@@ -20,10 +20,14 @@ int main()
         std::string text_input = getTextInput();
 
         if (validInput(text_input))
+        {
             outputText(text_input);
+            last_action = text_input;
+        }
         else
+        {
             outputText("Invalid Input");
-        last_action = text_input;
+        }
         if (last_action == "exit") exit = true;
 
 
